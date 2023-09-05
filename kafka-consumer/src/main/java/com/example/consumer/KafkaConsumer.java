@@ -12,6 +12,6 @@ public class KafkaConsumer {
     @KafkaListener(topics = "wikimedia-topic", groupId="group_id")
     public void consume(String message) {
 
-        LOGGER.info("Consumed new data! -> " +message);
+           LOGGER.info("Consumed new data! -> " +message);
     }
 }
